@@ -8,7 +8,7 @@ export function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-10 text-center md:text-left">
           {/* Brand */}
           <div className="flex flex-col items-center md:items-start">
-            <Image src="/images/logo.png" alt="SmarTec logo" width={140} height={60} className="self-center" />
+            <Image src="images/logo.png" alt="SmarTec logo" width={140} height={60} className="self-center" />
             <p className="mt-4 text-sm text-white/80 text-center self-center">Diagnóstico preciso, soluciones reales.</p>
           </div>
 
