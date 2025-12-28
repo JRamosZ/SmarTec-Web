@@ -8,12 +8,12 @@ type ButtonProps = {
 };
 
 export function Button({children, href, variant = "primary", className}: ButtonProps) {
-  const baseStyles = "inline-flex items-center justify-center gap-2 px-6 py-3 rounded-lg font-semibold transition cursor-pointer focus:outline-none focus:ring-2 focus:ring-offset-2";
+  const baseStyles = "inline-flex items-center justify-center gap-2 px-6 py-3 rounded-lg font-display font-semibold transition-all duration-200 cursor-pointer transform hover:-translate-y-0.5 active:translate-y-0";
 
   const variants = {
-    primary: "bg-brand-primary text-white hover:bg-brand-primary-hover shadow-cta focus:ring-brand-primary",
-    secondary: "border border-ui-300 text-brand-dark hover:bg-ui-100 focus:ring-ui-300",
-    whatsapp: "bg-green-500 text-white hover:bg-green-600 focus:ring-green-500",
+    primary: "bg-brand-primary text-white hover:bg-brand-primary-hover shadow-cta hover:shadow-lg",
+    secondary: "border border-brand-border text-brand-dark hover:bg-brand-light hover:-translate-y-0.5",
+    whatsapp: "bg-whatsapp text-white hover:opacity-90 hover:-translate-y-0.5",
   };
 
   return (

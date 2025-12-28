@@ -1,6 +1,6 @@
 export function WhySmarTec() {
   return (
-    <section className="py-24 bg-brand-light">
+    <section className="py-20 bg-brand-light">
       <div className="max-w-6xl mx-auto px-6">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
           {/* Left narrative */}

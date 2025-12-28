@@ -1,51 +1,58 @@
 @import "tailwindcss";
 
-/* =========================
-   TOKENS DE MARCA — SmarTec
-   ========================= */
-
 @theme {
-  /* Brand colors */
-  --color-brand-primary: #c4161c; /* Rojo SmarTec */
+  /* =========================
+     Brand colors
+     ========================= */
+  --color-brand-primary: #c4161c;
   --color-brand-primary-hover: #a31217;
   --color-brand-dark: #0f0f0f;
   --color-brand-light: #ffffff;
 
-  /* Neutral UI */
+  /* WhatsApp */
+  --color-whatsapp: #25d366;
+  --color-whatsapp-hover: #1ebe5d;
+
+  /* =========================
+     Neutral UI
+     ========================= */
   --color-ui-100: #f5f5f5;
   --color-ui-200: #e5e5e5;
   --color-ui-300: #d4d4d4;
   --color-ui-700: #404040;
   --color-ui-900: #171717;
 
-  /* Text */
+  /* Borders */
+  --color-brand-border: #e5e5e5;
+
+  /* =========================
+     Text
+     ========================= */
   --color-text-primary: var(--color-brand-dark);
   --color-text-inverse: var(--color-brand-light);
   --color-text-muted: #6b7280;
 
-  /* Backgrounds */
+  /* =========================
+     Backgrounds
+     ========================= */
   --color-bg-page: #ffffff;
   --color-bg-section: #fafafa;
 
-  /* Shadows */
+  /* =========================
+     Shadows
+     ========================= */
   --shadow-soft: 0 4px 12px rgba(0, 0, 0, 0.08);
   --shadow-cta: 0 10px 24px rgba(196, 22, 28, 0.35);
 
-  /* Radius */
+  /* =========================
+     Radius
+     ========================= */
   --radius-sm: 0.375rem;
   --radius-md: 0.75rem;
   --radius-lg: 1rem;
 
-  /* Typography */
+  /* =========================
+     Typography
+     ========================= */
   --font-sans: var(--font-inter);
-}
-
-/* =========================
-   BASE STYLES
-   ========================= */
-
-body {
-  background-color: var(--color-bg-page);
-  color: var(--color-text-primary);
-  font-family: var(--font-sans);
 }
