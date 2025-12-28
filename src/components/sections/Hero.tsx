@@ -18,7 +18,7 @@ export function Hero() {
           transform: `translateY(${offset}px)`,
         }}
       >
-        <Image src={asset("/images/hero.jpg")} alt="Diagnóstico automotriz avanzado" fill priority className="object-cover" />
+        <Image src={asset("/images/hero_img.jpg")} alt="Diagnóstico automotriz avanzado" fill priority className="object-cover" />
       </div>
 
       {/* Overlay – más claro */}
