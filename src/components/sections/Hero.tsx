@@ -6,6 +6,12 @@ import {asset} from "@/lib/asset";
 import Image from "next/image";
 import {FadeIn} from "../ui/FadeIn";
 
+// small SVG shimmer placeholder for perceived performance
+const shimmer = (w: number, h: number) =>
+  `\n  <svg width="${w}" height="${h}" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 ${w} ${h}">\n    <defs>\n      <linearGradient id=\"g\">\n        <stop stop-color=\"#333\" offset=\"20%\" />\n        <stop stop-color=\"#222\" offset=\"50%\" />\n        <stop stop-color=\"#333\" offset=\"70%\" />\n      </linearGradient>\n    </defs>\n    <rect width=\"100%\" height=\"100%\" fill=\"#111\" />\n    <rect id=\"r\" width=\"100%\" height=\"100%\" fill=\"url(#g)\" />\n    <animate xlink:href=\"#r\" attributeName=\"x\" from=\"-100%\" to=\"100%\" dur=\"1.6s\" repeatCount=\"indefinite\"  />\n  </svg>`;
+
+const toBase64 = (str: string) => (typeof window === "undefined" ? Buffer.from(str).toString("base64") : window.btoa(str));
+
 export function Hero() {
   const offset = useParallax(0.15);
 
@@ -18,7 +24,7 @@ export function Hero() {
           transform: `translateY(${offset}px)`,
         }}
       >
-        <Image src={asset("/images/hero_img.jpg")} alt="Diagnóstico automotriz avanzado" fill priority className="object-cover" />
+        <Image src={asset("/images/hero_img.jpg")} alt="Diagnóstico automotriz avanzado" fill priority className="object-cover" sizes="100vw" quality={75} placeholder="blur" blurDataURL={`data:image/svg+xml;base64,${toBase64(shimmer(700, 400))}`} />
       </div>
 
       {/* Overlay – más claro */}
