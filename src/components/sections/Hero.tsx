@@ -24,7 +24,7 @@ export function Hero() {
           transform: `translateY(${offset}px)`,
         }}
       >
-        <Image src={asset("/images/hero_img.jpg")} alt="Diagnóstico automotriz avanzado" fill priority className="object-cover" sizes="100vw" quality={75} placeholder="blur" blurDataURL={`data:image/svg+xml;base64,${toBase64(shimmer(700, 400))}`} />
+        <Image src={asset("/images/hero_img.jpg")} alt="Diagnóstico automotriz avanzado" fill priority className="object-cover" sizes="100vw" quality={75} placeholder="blur" blurDataURL={`data:image/svg+xml;base64,${toBase64(shimmer(1920, 1080))}`} />
       </div>
 
       {/* Overlay – más claro */}
@@ -35,7 +35,7 @@ export function Hero() {
         <div className="container mx-auto px-6">
           <div className="max-w-xl text-left space-y-6">
             {/* Logo */}
-            <Image src={asset("/images/logo.png")} alt="Tech Auto Lab" width={160} height={48} className="mb-4" />
+            <Image src={asset("/images/logo.webp")} alt="Tech Auto Lab" width={160} height={48} className="mb-4" priority placeholder="blur" blurDataURL={`data:image/svg+xml;base64,${toBase64(shimmer(160, 48))}`} />
 
             <FadeIn>
               <h1 className="font-display text-4xl md:text-5xl font-bold text-white leading-tight">Diagnóstico preciso, soluciones reales</h1>

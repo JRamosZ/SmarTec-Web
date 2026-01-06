@@ -9,7 +9,7 @@ export function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-12 text-center md:text-left">
           {/* Brand */}
           <div className="flex flex-col items-center md:items-start">
-            <Image src={asset("/images/logo.png")} alt="SmarTec logo" width={140} height={60} className="mb-6 opacity-90" />
+            <Image src={asset("/images/logo.webp")} alt="SmarTec logo" width={140} height={60} className="mb-6 opacity-90" />
             <p className="text-sm text-center text-white/70 max-w-xs">
               Diagnóstico preciso,
               <br />
