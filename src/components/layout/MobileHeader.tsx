@@ -33,7 +33,7 @@ export function MobileHeader() {
 
             {/* Logo */}
             <a href="#hero" aria-label="Ir al inicio" title="Ir al inicio">
-              <Image src={asset("/images/logo.png")} alt="SmarTec" width={40} height={40} priority />
+              <Image src={asset("/images/logo.webp")} alt="SmarTec" width={40} height={40} />
             </a>
           </div>
 

@@ -24,7 +24,7 @@ export function DesktopHeader() {
         <div className="container mx-auto px-6 h-16 flex items-center justify-between">
           {/* Logo */}
           <a href="#hero" className="flex items-center gap-3">
-            <Image src={asset("/images/logo.png")} alt="SmarTec" width={36} height={36} priority />
+            <Image src={asset("/images/logo.webp")} alt="SmarTec" width={36} height={36} />
           </a>
 
           {/* Navigation */}
